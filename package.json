@@ -1,0 +1,25 @@
+{
+  "name": "proreadme",
+  "version": "8.2.4",
+  "description": "Professional README Generator with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinsta624/ProREADME.git"
+  },
+  "keywords": [
+    "ProREADME"
+  ],
+  "author": "Hanbyeol Justin Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinsta624/ProREADME/issues"
+  },
+  "homepage": "https://github.com/justinsta624/ProREADME#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
