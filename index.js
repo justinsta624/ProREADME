@@ -1,84 +1,80 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
+
+// generateMarkdown function: populate the README.md pursuant to answer from terminal
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-inquirer
-    .prompt([
-        {
-            type: "input",
-            name: "Title",
-            message: "Write the title of the project",
-        },
-        {
-            type: "input",
-            name: "Description",
-            message: "Can you briefly describe your project?"
-        },
-        {
-            type: "input",
-            name: "Installation",
-            message: "Can you describe the process of installation for this project?",
-        },
-        {
-            type: "input",
-            name: "Usage",
-            message: "Can you describe the purpose of usage for this project?"
-        },
-        {
-            type: "input",
-            name: "License",
-            message: "Which license did you apply for this project?",
-        },
-        {
-            type: "input",
-            name: "Contributor",
-            message: "Who is the contributor for this projects?"
-        },
-        {
-            type: "input",
-            name: "Tests",
-            message: "Did you conduct the tests for this projects?"
-        },
-        {
-            type: "input",
-            name: "Questions",
-            message: "Please enter the appropriate method, if you have any questions (e.g. Email)"
-        },
-        {
-            type: "input",
-            name: "GitHubUsername",
-            message: "Please enter your GitHub username"
-        },
-        {
-            type: "input",
-            name: "Email",
-            message: "Please enter your email address"
-        },
-        {
-            type: "password",
-            name: "password",
-            message: "Please enter your password"
-        },
-        {
-            type: "password",
-            name: "confirm",
-            message: "Please re-enter your password to confirm"
+const ArrayQuestions = [
+    {
+        type: "input",
+        name: "Title",
+        message: "What is the -Title- of the challenge? : "
+    },
+    {
+        type: "input",
+        name: "Description",
+        message: "Can you briefly -Describe- about the challenge? : "
+    },
+    {
+        type: "input",
+        name: "Installation",
+        message: "Which library/package did you -Install- for the challenge? : "
+    },
+    {
+        type: "input",
+        name: "Usage",
+        message: "What is the -Usage- of this challenge? : "
+    },
+    {
+        type: "checkbox",
+        name: "License",
+        choices: ['MIT', 'Apache', 'GNU', 'BSD', 'BSU', 'Mozilla', 'EPL', 'etc.'],
+        message: "Which -License- did you applied for the challenge? : "
+    },
+    {
+        type: "input",
+        name: "Contributor",
+        message: "Who makes -Contribute- for this challenge? : "
+    },
+    {
+        type: "input",
+        name: "Tests",
+        message: "Did you conduct the -Tests- for the challenge? : "
+    },
+    {
+        type: "input",
+        name: "Questions",
+        message: "If I have any -Questions-, How can I reach out to you? : "
+    },
+    {
+        type: "input",
+        name: "GitHubUsername",
+        message: "Please enter your GitHub username : "
+    },
+    {
+        type: "input",
+        name: "Email",
+        message: "Please enter your email address : "
+    },
+];
+
+function writeToFile (fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
         }
-        
-    ])
-
-    .then((response) => {
-        console.log(response);
-        return response.confirm === response.password
-        ? console.log('Success!')
-        : console.log('Fail to comply with the code!')
+        console.log("Your README.md has been successfully generated!")
     });
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+}
 
 // TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+const init = () => {
+    inquirer.prompt(ArrayQuestions)
+      .then((data) => writeToFile('README.md', generateMarkdown(data)))
+      .then(() => console.log('Successfully wrote to README.md'))
+      .catch((err) => console.error(err));
+  };
+// Function call to initialize app 
+  init();
