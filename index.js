@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
-// const inquirer = require('inquirer');
-import inquirer from "inquirer";
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -54,8 +53,26 @@ inquirer
             type: "input",
             name: "Email",
             message: "Please enter your email address"
+        },
+        {
+            type: "password",
+            name: "password",
+            message: "Please enter your password"
+        },
+        {
+            type: "password",
+            name: "confirm",
+            message: "Please re-enter your password to confirm"
         }
-    ]); 
+        
+    ])
+
+    .then((response) => {
+        console.log(response);
+        return response.confirm === response.password
+        ? console.log('Success!')
+        : console.log('Fail to comply with the code!')
+    });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
