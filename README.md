@@ -1,12 +1,11 @@
 
   <h1 align="center">Professional README.md 😆 😁 😉 😜 </h1>
     
-  <h2 align="center">
   ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol(Justin)Lee-purple)
   ![Email](https://img.shields.io/badge/Email-justinsta624@gmail.com-green)
   ![GitHub](https://img.shields.io/badge/GitHub-justinsta624-yellow)
   ![License](https://img.shields.io/badge/License-MIT-magenta)
-  ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)</h2>
+  ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
 
   ## Description
   Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
