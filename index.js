@@ -46,7 +46,7 @@ const ArrayQuestions = [
     {
         type: "input",
         name: "Questions",
-        message: "If I have any -Questions-, How can I reach out to you? : "
+        message: "If I have any additional -Questions-, How can I reach out to you? : "
     },
     {
         type: "input",

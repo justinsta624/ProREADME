@@ -35,7 +35,7 @@ function renderLicenseSection(License) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  <h1 align="center">${data.Title} 😆 😁 😉 😜 </h1>
+  <h1 align="center"> ⭐ ${data.Title} ⭐ </h1>
     
   ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)
   ![Email](https://img.shields.io/badge/Email-${data.Email}-green)
@@ -43,11 +43,13 @@ function generateMarkdown(data) {
   ![License](https://img.shields.io/badge/License-${data.License}-magenta)
   ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
  
-
-  ## Description
+  <details open>
+  <summary> ## Description </summary> <br />
   ${data.Description}
-  
-  ## Table of Contents
+  </details>
+
+  <details open>
+  <summary> ## Table of Contents </summary> <br />
   - [Description](#Description) <br />
   - [Installation](#Installation) <br />
   - [Usage](#Usage) <br />
@@ -55,28 +57,41 @@ function generateMarkdown(data) {
   - [Contributor](#Contributor) <br />
   - [Tests](#Tests) <br />
   - [Questions](#Questions) <br />
-  
-  ## Installation
+  </details>
+
+  <details open>
+  <summary> ## Installation </summary> <br />
   ${data.Installation}
+  </details>
   
-  ## Usage
+  <details open>
+  <summary> ## Usage Information </summary> <br />
   ${data.Usage}
-  
-  ## License
-  ${data.License} License is used for README.md generating challenge  
-  
-  ## Contributor
+  </details>
+
+  <details open>
+  <summary> ## License </summary> <br />
+  ![License](https://img.shields.io/badge/License-${data.License}-magenta) is used for README.md generating challenge
+  </details>
+
+  <details open>
+  <summary> ## Contributor </summary> <br />
   ${data.Contributor}
+  </details>
   
-  ## Tests
+  <details open>
+  <summary> ## Test Instruction </summary> <br />
   ${data.Tests}
+  </details>
   
-  ## Questions
+  <details open>
+  <summary> ## Questions </summary> <br />
   ${data.Questions}<br />
   <br />
   Direct Link to my GitHub Repository: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername})<br />
   <br />
   Direct Link to my Email: ${data.Email}<br /><br />
+  </details>
   
   _GitHub repository: https://github.com/justinsta624/ProREADME_
       `;
