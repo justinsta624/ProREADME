@@ -1,22 +1,47 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(License) {}
+function renderLicenseBadge(License) {
+  if (License !== 'none') {
+    return '[![License](https://img.shields.io/badge/License-${License}-magenta)](#License)';
+  } 
+  else {
+    return '';
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(License) {}
+function renderLicenseLink(License) {
+  if (License !== 'none') {
+    return 'https://choosealicense.com/licenses/${License}';
+  } 
+  else {
+    return '';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(License) {}
+function renderLicenseSection(License) {
+  if (License !== 'none') {
+    return '## License [${License}](${renderLicenseLink(License)})';
+  } 
+  else {
+    return '';
+  }
+
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  <h1 align="center">${data.Title} 👋</h1>
+  <h1 align="center">${data.Title} 😆 😁 😉 😜 </h1>
     
-  ![badge](https://img.shields.io/badge/License-${data.License}-Magenta)<br />
-  
+  ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)<br />
+  ![License](https://img.shields.io/badge/License-${data.License}-Magenta)<br />
+  ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)<br />
+  ![Email](https://img.shields.io/badge/Title-${data.Email}-green)<br />
+
   ## Description
   ${data.Description}
   
@@ -36,7 +61,7 @@ function generateMarkdown(data) {
   ${data.Usage}
   
   ## License
-  ![badge](https://img.shields.io/badge/License-${data.License}-Purple)
+  ![License](https://img.shields.io/badge/License-${data.License}-magenta)
   <br />
   This application is covered by the ${data.License} License. 
   
@@ -49,9 +74,9 @@ function generateMarkdown(data) {
   ## Questions
   ${data.Questions}<br />
   <br />
-  :octocat: Find me on GitHub: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername})<br />
+  Direct Link to my GitHub Repository: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername})<br />
   <br />
-  Email me with any questions: ${data.Email}<br /><br />
+  Direct Link to my Email: ${data.Email}<br /><br />
   
   _GitHub repository: https://github.com/justinsta624/ProREADME_
       `;
