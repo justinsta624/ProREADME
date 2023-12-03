@@ -47,13 +47,13 @@ function generateMarkdown(data) {
   ${data.Description}
 
   ## Table of Contents <br />
-  - [Description](#Description) <br />
-  - [Installation](#Installation) <br />
-  - [Usage](#Usage) <br />
-  - [License](#License) <br />
-  - [Contributor](#Contributor) <br />
-  - [Tests](#Tests) <br />
-  - [Questions](#Questions) <br />
+  - [Description](##Description) <br />
+  - [Installation](##Installation) <br />
+  - [Usage](##Usage) <br />
+  - [License](##License) <br />
+  - [Contributor](##Contributor) <br />
+  - [Tests](##Tests) <br />
+  - [Questions](##Questions) <br />
 
   ## Installation <br />
   ${data.Installation}
