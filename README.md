@@ -1,10 +1,10 @@
 
-  <h1 align="center">Professional README 😆 😁 😉 😜 </h1>
+  <h1 align="center">Professional README.md 😆 😁 😉 😜 </h1>
     
-  ![Contributor](https://img.shields.io/badge/Contributor-HanbyeolJustinLee-purple)<br />
-  ![License](https://img.shields.io/badge/License-MIT-Magenta)<br />
-  ![Installation](https://img.shields.io/badge/Installation-inquirer@8.4.2-red)<br />
-  ![Email](https://img.shields.io/badge/Title-justinsta624@gmail.com-green)<br />
+  ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol Justin Lee (Student of Coding BOOTCAMP)-purple)
+  ![License](https://img.shields.io/badge/License-MIT-Magenta)
+  ![Installation](https://img.shields.io/badge/Installation-Npminquirer@8.4.2-red)
+  ![Email](https://img.shields.io/badge/Title-justinsta624@gmail.com-green)
 
   ## Description
   to create README.md  generator by using Node.js function in Command-line Application
@@ -19,18 +19,16 @@
   - [Questions](#Questions)
   
   ## Installation
-  inquirer@8.4.2
+  Npminquirer@8.4.2
   
   ## Usage
   Coding BOOTCAMP: UTOR-VIRT-FSF-PT-09-2023-U-LOLC-MWTH (Challenge 9 for Node.js)
   
   ## License
-  ![License](https://img.shields.io/badge/License-MIT-magenta)
-  <br />
-  This application is covered by the MIT License. 
+  MIT License is used for README.md generating challenge  
   
   ## Contributor
-  Hanbyeol Justin Lee
+  Hanbyeol Justin Lee (Student of Coding BOOTCAMP)
   
   ## Tests
   Tests are not required for this Challenge
