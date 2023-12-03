@@ -38,21 +38,23 @@ function generateMarkdown(data) {
   <h1 align="center">${data.Title} 😆 😁 😉 😜 </h1>
     
   ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)
+  ![Email](https://img.shields.io/badge/Email-${data.Email}-green)
+  ![GitHub](https://img.shields.io/badge/GitHub-${data.GitHubUsername}-yellow)
   ![License](https://img.shields.io/badge/License-${data.License}-magenta)
   ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
-  ![Email](https://img.shields.io/badge/Email-${data.Email}-green)
+ 
 
   ## Description
   ${data.Description}
   
   ## Table of Contents
-  [Description](#Description)
-  [Installation](#Installation)
-  [Usage](#Usage)
-  [License](#License)
-  [Contributor](#Contributor)
-  [Tests](#Tests)
-  [Questions](#Questions)
+  - [Description](#Description) <br />
+  - [Installation](#Installation) <br />
+  - [Usage](#Usage) <br />
+  - [License](#License) <br />
+  - [Contributor](#Contributor) <br />
+  - [Tests](#Tests) <br />
+  - [Questions](#Questions) <br />
   
   ## Installation
   ${data.Installation}

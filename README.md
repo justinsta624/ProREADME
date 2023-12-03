@@ -1,25 +1,27 @@
 
   <h1 align="center">Professional README.md 😆 😁 😉 😜 </h1>
     
-  ![Contributor](https://img.shields.io/badge/Contributor-HanbyeolJustinLee-purple)
-  ![License](https://img.shields.io/badge/License-MIT-magenta)
-  ![Installation](https://img.shields.io/badge/Installation-NPM/Inquirer@8.4.2-red)
+  <h2 align="center">
+  ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol(Justin)Lee-purple)
   ![Email](https://img.shields.io/badge/Email-justinsta624@gmail.com-green)
+  ![GitHub](https://img.shields.io/badge/GitHub-justinsta624-yellow)
+  ![License](https://img.shields.io/badge/License-MIT-magenta)
+  ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)</h2>
 
   ## Description
-  to create README.md  generator by using Node.js function in Command-line Application
+  Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
   
   ## Table of Contents
-  [Description](#Description)
-  [Installation](#Installation)
-  [Usage](#Usage)
-  [License](#License)
-  [Contributor](#Contributor)
-  [Tests](#Tests)
-  [Questions](#Questions)
+  - [Description](#Description) <br />
+  - [Installation](#Installation) <br />
+  - [Usage](#Usage) <br />
+  - [License](#License) <br />
+  - [Contributor](#Contributor) <br />
+  - [Tests](#Tests) <br />
+  - [Questions](#Questions) <br />
   
   ## Installation
-  NPM/Inquirer@8.4.2
+  npm/inquirer@8.4.2
   
   ## Usage
   Coding BOOTCAMP: UTOR-VIRT-FSF-PT-09-2023-U-LOLC-MWTH (Challenge 9 for Node.js)
@@ -28,7 +30,7 @@
   MIT License is used for README.md generating challenge  
   
   ## Contributor
-  HanbyeolJustinLee
+  Hanbyeol(Justin)Lee
   
   ## Tests
   Tests are not required for this Challenge
