@@ -39,17 +39,14 @@ function generateMarkdown(data) {
     
   ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)
   ![Email](https://img.shields.io/badge/Email-${data.Email}-green)
-  ![GitHub](https://img.shields.io/badge/GitHub-${data.GitHubUsername}-yellow)
+  ![GitHubRepo](https://img.shields.io/badge/GitHubrepo-${data.GitHubUsername}-yellow)
   ![License](https://img.shields.io/badge/License-${data.License}-magenta)
   ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
  
-  <details open>
-  <summary> ## Description </summary> <br />
+  ## Description <br />
   ${data.Description}
-  </details>
 
-  <details open>
-  <summary> ## Table of Contents </summary> <br />
+  ## Table of Contents <br />
   - [Description](#Description) <br />
   - [Installation](#Installation) <br />
   - [Usage](#Usage) <br />
@@ -57,41 +54,28 @@ function generateMarkdown(data) {
   - [Contributor](#Contributor) <br />
   - [Tests](#Tests) <br />
   - [Questions](#Questions) <br />
-  </details>
 
-  <details open>
-  <summary> ## Installation </summary> <br />
+  ## Installation <br />
   ${data.Installation}
-  </details>
   
-  <details open>
-  <summary> ## Usage Information </summary> <br />
+  ## Usage Information <br />
   ${data.Usage}
-  </details>
 
-  <details open>
-  <summary> ## License </summary> <br />
+  ## License <br />
   ![License](https://img.shields.io/badge/License-${data.License}-magenta) is used for README.md generating challenge
-  </details>
 
-  <details open>
-  <summary> ## Contributor </summary> <br />
+  ## Contributor <br />
   ${data.Contributor}
-  </details>
   
-  <details open>
-  <summary> ## Test Instruction </summary> <br />
+  ## Test Instruction <br />
   ${data.Tests}
-  </details>
   
-  <details open>
-  <summary> ## Questions </summary> <br />
+  ## Questions <br />
   ${data.Questions}<br />
   <br />
   Direct Link to my GitHub Repository: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername})<br />
   <br />
   Direct Link to my Email: ${data.Email}<br /><br />
-  </details>
   
   _GitHub repository: https://github.com/justinsta624/ProREADME_
       `;
