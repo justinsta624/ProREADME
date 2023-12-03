@@ -37,10 +37,10 @@ function generateMarkdown(data) {
   return `
   <h1 align="center">${data.Title} 😆 😁 😉 😜 </h1>
     
-  ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)<br />
-  ![License](https://img.shields.io/badge/License-${data.License}-Magenta)<br />
-  ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)<br />
-  ![Email](https://img.shields.io/badge/Title-${data.Email}-green)<br />
+  ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)
+  ![License](https://img.shields.io/badge/License-${data.License}-Magenta)
+  ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
+  ![Email](https://img.shields.io/badge/Title-${data.Email}-green)
 
   ## Description
   ${data.Description}
@@ -61,9 +61,7 @@ function generateMarkdown(data) {
   ${data.Usage}
   
   ## License
-  ![License](https://img.shields.io/badge/License-${data.License}-magenta)
-  <br />
-  This application is covered by the ${data.License} License. 
+  ${data.License} License is used for README.md generating challenge  
   
   ## Contributor
   ${data.Contributor}
