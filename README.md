@@ -1,9 +1,9 @@
 
   <h1 align="center">Professional README 😆 😁 😉 😜 </h1>
     
-  ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol Justin Lee-purple)<br />
+  ![Contributor](https://img.shields.io/badge/Contributor-HanbyeolJustinLee-purple)<br />
   ![License](https://img.shields.io/badge/License-MIT-Magenta)<br />
-  ![Installation](https://img.shields.io/badge/Installation-npm install inquirer@8.4.2-red)<br />
+  ![Installation](https://img.shields.io/badge/Installation-inquirer@8.4.2-red)<br />
   ![Email](https://img.shields.io/badge/Title-justinsta624@gmail.com-green)<br />
 
   ## Description
@@ -19,7 +19,7 @@
   - [Questions](#Questions)
   
   ## Installation
-  npm install inquirer@8.4.2
+  inquirer@8.4.2
   
   ## Usage
   Coding BOOTCAMP: UTOR-VIRT-FSF-PT-09-2023-U-LOLC-MWTH (Challenge 9 for Node.js)
