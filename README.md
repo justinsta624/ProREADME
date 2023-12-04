@@ -6,14 +6,18 @@
   ![GitHubRepo](https://img.shields.io/badge/GitHubrepo-justinsta624-yellow)
   ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
 
+</br>
+</br>
 
 ## README.md file for a project repository generated using application
 
 </br>
 </br>
+
 [Output of Professional README Generator](https://github.com/justinsta624/ProREADME/blob/main/output/README.md)
 
-
+</br>
+</br>
 
 ## Your Task
 
