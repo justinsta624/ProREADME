@@ -8,9 +8,7 @@
   ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
  
   ## Description
-  ```
   My goal of this challenge is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
-  ```
 
   ## Table of Contents
   - [Description](#description)
