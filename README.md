@@ -1,4 +1,4 @@
-# 09 Node.js Challenge: Professional README Generator
+# Challenge 9: Node.js - Professional README Generator
     
   ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol(Justin)Lee-purple)
   ![Email](https://img.shields.io/badge/Email-justinsta624@gmail.com-green)
@@ -7,6 +7,10 @@
   ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
 
 
+## README.md file for a project repository generated using application
+
+</br>
+</br>
 [Output of Professional README Generator](https://github.com/justinsta624/ProREADME/blob/main/output/README.md)
 
 
