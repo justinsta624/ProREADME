@@ -44,9 +44,7 @@ function generateMarkdown(data) {
   ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
  
   ## Description
-  \`\`\`
   ${data.Description}
-  \`\`\`
 
   ## Table of Contents
   - [Description](#description)
