@@ -2,11 +2,13 @@
     
   ![Contributor](https://img.shields.io/badge/Contributor-Hanbyeol(Justin)Lee-purple)
   ![Email](https://img.shields.io/badge/Email-justinsta624@gmail.com-green)
+  [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/license/MIT)
   ![GitHubRepo](https://img.shields.io/badge/GitHubrepo-justinsta624-yellow)
-  ![License](https://img.shields.io/badge/License-MIT-magenta)
   ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
 
+
 [Output of Professional README Generator](https://github.com/justinsta624/ProREADME/blob/main/output/README.md)
+
 
 
 ## Your Task
