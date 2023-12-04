@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
   if (License !== 'none') {
-    return '[![License](https://img.shields.io/badge/License-${License}-magenta)](#License)';
+    return `[![License](https://img.shields.io/badge/License-${License}-blue)](${renderLicenseLink(License)})`;
   } 
   else {
     return '';
@@ -13,7 +13,7 @@ function renderLicenseBadge(License) {
 // If there is no license, return an empty string
 function renderLicenseLink(License) {
   if (License !== 'none') {
-    return 'https://choosealicense.com/licenses/${License}';
+    return `https://opensource.org/license/${License}`;
   } 
   else {
     return '';
@@ -24,7 +24,7 @@ function renderLicenseLink(License) {
 // If there is no license, return an empty string
 function renderLicenseSection(License) {
   if (License !== 'none') {
-    return '## License [${License}](${renderLicenseLink(License)})';
+    return `## License [${License}](${renderLicenseLink(License)})`;
   } 
   else {
     return '';
@@ -35,42 +35,52 @@ function renderLicenseSection(License) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  <h1 align="center"> ⭐ ${data.Title} ⭐ </h1>
-    
+  <h1 align="center"> ⭐ ${data.Title} ⭐ </h1> <br />
+
   ![Contributor](https://img.shields.io/badge/Contributor-${data.Contributor}-purple)
   ![Email](https://img.shields.io/badge/Email-${data.Email}-green)
+  ${renderLicenseBadge(data.License)}
   ![GitHubRepo](https://img.shields.io/badge/GitHubrepo-${data.GitHubUsername}-yellow)
-  ![License](https://img.shields.io/badge/License-${data.License}-magenta)
   ![Installation](https://img.shields.io/badge/Installation-${data.Installation}-red)
  
-  ## Description <br />
+  ## Description
+  \`\`\`
   ${data.Description}
+  \`\`\`
 
-  ## Table of Contents <br />
-  - [Description](##Description) <br />
-  - [Installation](##Installation) <br />
-  - [Usage](##Usage) <br />
-  - [License](##License) <br />
-  - [Contributor](##Contributor) <br />
-  - [Tests](##Tests) <br />
-  - [Questions](##Questions) <br />
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributor](#contributor)
+  - [Test](#test)
+  - [Questions](#questions)
 
-  ## Installation <br />
+  ## Installation 
+  \`\`\`
   ${data.Installation}
+  \`\`\`
   
-  ## Usage Information <br />
+  ## Usage
+  \`\`\`
   ${data.Usage}
+  \`\`\`
 
-  ## License <br />
-  ![License](https://img.shields.io/badge/License-${data.License}-magenta) is used for README.md generating challenge
+  ## License
+  ${renderLicenseBadge(data.License)} is used for README.md generating challenge
 
-  ## Contributor <br />
+  ## Contributor 
+  \`\`\`
   ${data.Contributor}
+  \`\`\`
   
-  ## Test Instruction <br />
+  ## Test
+  \`\`\`
   ${data.Tests}
+  \`\`\`
   
-  ## Questions <br />
+  ## Questions 
   ${data.Questions}<br />
   <br />
   Direct Link to my GitHub Repository: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername})<br />
@@ -83,3 +93,4 @@ function generateMarkdown(data) {
 
 
     module.exports = generateMarkdown;
+
