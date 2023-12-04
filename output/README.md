@@ -8,9 +8,9 @@
   ![Installation](https://img.shields.io/badge/Installation-npm/inquirer@8.4.2-red)
  
   ## Description
- 
+  ```
   My goal of this challenge is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
- 
+  ```
 
   ## Table of Contents
   - [Description](#description)
@@ -45,11 +45,11 @@
   ```
   
   ## Questions 
-  You can reach me via email -or- through GitHub message!<br />
+  You can reach me via email -or- through GitHub message<br />
   <br />
   Direct Link to my GitHub Repository: [justinsta624](https://github.com/justinsta624)<br />
   <br />
-  Direct Link to my Email: <br /><br />
+  Direct Link to my Email: justinsta624@gmail.com<br /><br />
   
   _GitHub repository: https://github.com/justinsta624/ProREADME_
       
