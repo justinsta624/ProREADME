@@ -11,7 +11,7 @@
 Followings are the outcomes of the challenge 9:
 
 * A walkthrough video demonstrating the functionality of the application. </br>
-[Walk-Through Video: Webm file](https://github.com/justinsta624/ProREADME/blob/main/output/231204_Walkthrough_Video_HBLEE.webm) </br>
+[Walk-Through Video: Webm file](https://drive.google.com/file/d/1ehN9PsbONI8YI3ehstZPM0pmtXvyBLKh/view?usp=sharing) </br>
 [Walk-Through Video: GIF file](https://github.com/justinsta624/ProREADME/blob/main/output/231204_Walkthrough_Video_HBLEE.gif)
 </br>
 
