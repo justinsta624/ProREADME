@@ -49,5 +49,5 @@
   <br />
   Direct Link to my Email: justinsta624@gmail.com<br /><br />
   
-  _GitHub repository: https://github.com/justinsta624/ProREADME_
+  _GitHub repository for this challenge: https://github.com/justinsta624/ProREADME_
       
